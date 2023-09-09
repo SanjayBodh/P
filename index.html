@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{
+margin:0;
+padding:0;
+width:auto;
+height:100vh;
+} 
+html {
+     scroll-behavior: smooth;
+}
+.image{
+position:fixed;
+width:100%;
+height:100vh;
+top:0;
+z-index:888;
+}
+.image img{
+width:100%;
+height:100%;
+}
+.content {
+z-index:1000;
+position:relative;
+background-colorwhite;
+padding:20px;
+color:white;
+ opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+}
+.content-two{
+position:relative;
+z-index:1000;
+height:200px;
+text-align:center;
+
+}
+.content-three{
+position:relative;
+z-index:1000;
+background-color:white;
+padding:20px;
+}
+::-webkit-scrollbar {
+  display: none; 
+}
+.cont-flex{
+display:flex;
+justify-content:space-between;
+}
+.content-four{
+background-color:white;
+position:relative;
+z-index:1000;
+padding:20px;
+border-radius:20px 20px 0 0;
+ opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+}
+.content-five{
+color:white;
+position:relative;
+z-index:1000;
+padding:20px;
+
+}
+.slide-in {
+            animation: slideIn 3s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+.sec-cont{
+position:relative;
+z-index:999;
+color:white;
+display:none;
+width:100%;;
+}
+.sec a{
+position:relative;
+z-index:1001;
+display:none;
+}
+
+@media (max-width:768px){
+.cont-flex{
+display:flex;
+flex-direction:column;
+}
+.content-four,.content-five {
+display:none;
+        }
+.sec-cont{
+position:relative;
+top:200px;
+z-index:888;
+color:white;
+display:block;
+padding:px;
+background-colorgreen;
+
+text-align:center;
+width200px;;
+opacity: 1;
+            transition: opacity 1s ease-in-out;
+backdrop-filter:blur(10px);
+}
+.sec a{
+z-index:1001;
+display:block;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:white;
+text-decoration:none;
+font-size:30px;
+background-color:orange;
+border-radius:50px;
+padding:5px 20px;
+opacity: 1;
+            transition: opacity 2s ease-in-out;
+}
+.sec a:hover{
+color:orange;
+background-color:white;
+transition:background-color:0.5s;
+}
+}
+    </style>
+</head>
+<body>
+   <div class="image">
+<img src="image2.jpeg">
+</div>
+<div class="sec-cont">
+<h1>scroll<br> for more content</h1>
+</div>
+<div class="sec">
+<a href="#section">click</a>
+</div>
+<div class="cont-flex">
+<div class="content-four slide-in ">
+<h3>A good website is a powerful tool in today's digital age. It serves as a virtual storefront, a source of information, and a platform for communication. What sets a good website apart from the rest are several key attributes.
+
+User-Friendly Design: A good website has a clean and intuitive design that ensures visitors can easily navigate and find what they're looking for.
+Mobile Responsiveness: It adapts seamlessly to various devices, including smartphones and tablets, ensuring a consistent user experience.
+Fast Loading Speed: Speed matters. A good website loads quickly to prevent users from bouncing due to slow load times.
+High-Quality Content: Content is king. It offers valuable information, is well-organized, and easy to read.
+Clear Branding: A strong visual identity and consistent branding across the site build trust and recognition.
+Effective Navigation: The site's menu and links are logically structured, making it easy for users to explore different sections.
+Security: A good website prioritizes user data security with SSL certificates and safe browsing.
+Contact Information: It provides clear and easily accessible contact details for inquiries or support.
+Engaging Visuals: High-quality images and multimedia elements enhance the overall user experience.
+Optimized for SEO: The website is optimized for search engines to improve visibility in search results.
+Clear Call to Action (CTA): Each page has a clear purpose and encourages users to take specific actions, such as signing up or making a purchase.
+ </h3>
+</div>
+<div class="content-five slide-in">
+<h3>A good website is a powerful tool in today's digital age. It serves as a virtual storefront, a source of information, and a platform for communication. What sets a good website apart from the rest are several key attributes.
+
+User-Friendly Design: A good website has a clean and intuitive design that ensures visitors can easily navigate and find what they're looking for.
+Mobile Responsiveness: It adapts seamlessly to various devices, including smartphones and tablets, ensuring a consistent user experience.
+Fast Loading Speed: Speed matters. A good website loads quickly to prevent users from bouncing due to slow load times.
+High-Quality Content: Content is king. It offers valuable information, is well-organized, and easy to read.
+Clear Branding: A strong visual identity and consistent branding across the site build trust and recognition.
+Effective Navigation: The site's menu and links are logically structured, making it easy for users to explore different sections.
+Security: A good website prioritizes user data security with SSL certificates and safe browsing.
+Contact Information: It provides clear and easily accessible contact details for inquiries or support.
+Engaging Visuals: High-quality images and multimedia elements enhance the overall user experience.
+Optimized for SEO: The website is optimized for search engines to improve visibility in search results.
+Clear Call to Action (CTA): Each page has a clear purpose and encourages users to take specific actions, such as signing up or making a purchase.
+ </h3>
+</div>
+</div>
+<div class="content" id="section">
+<h3>A good website is a powerful tool in today's digital age. It serves as a virtual storefront, a source of information, and a platform for communication. What sets a good website apart from the rest are several key attributes.
+
+User-Friendly Design: A good website has a clean and intuitive design that ensures visitors can easily navigate and find what they're looking for.
+Mobile Responsiveness: It adapts seamlessly to various devices, including smartphones and tablets, ensuring a consistent user experience.
+Fast Loading Speed: Speed matters. A good website loads quickly to prevent users from bouncing due to slow load times.
+High-Quality Content: Content is king. It offers valuable information, is well-organized, and easy to read.
+Clear Branding: A strong visual identity and consistent branding across the site build trust and recognition.
+Effective Navigation: The site's menu and links are logically structured, making it easy for users to explore different sections.
+Security: A good website prioritizes user data security with SSL certificates and safe browsing.
+Contact Information: It provides clear and easily accessible contact details for inquiries or support.
+Engaging Visuals: High-quality images and multimedia elements enhance the overall user experience.
+Optimized for SEO: The website is optimized for search engines to improve visibility in search results.
+Clear Call to Action (CTA): Each page has a clear purpose and encourages users to take specific actions, such as signing up or making a purchase.
+Regular Updates: Content is kept fresh with regular updates, showing the site is active and relevant.
+Social Media Integration: Links to social profiles help users connect with the brand on various platforms.
+Loading Error Handling: It handles loading errors gracefully, displaying a friendly message when a page can't be found.
+Accessibility: A good website is accessible to all users, including those with disabilities, following WCAG guidelines.
+Compatibility: It functions well across different browsers and operating systems.
+Feedback Mechanism: Users can provide feedback or report issues easily.
+Search Functionality: A search bar helps users find specific content quickly.
+FAQ Section: Frequently asked questions can save users time and reduce support inquiries.
+Testimonials and Reviews: Positive feedback from satisfied customers builds trust.
+Privacy Policy: Transparency about data handling is crucial for user trust.
+Legal Compliance: The website adheres to relevant laws and regulations, such as GDPR or CCPA.
+Engaging Blog: A blog provides fresh, informative, and engaging content.
+Newsletter Signup: Allows users to subscribe for updates.
+Interactive Elements: Features like quizzes, polls, or calculators can enhance user engagement.
+Localization: If applicable, the site supports multiple languages or regions.
+Loading Progress Indicator: It informs users when a page is loading.
+Site Map: A clear sitemap aids navigation.
+Analytics Integration: Tools like Google Analytics help track site performance.
+FAQs and Help Center: Resources for troubleshooting and common questions are readily available.
+Video Content: Video can convey information more effectively than text alone.
+Live Chat Support: Real-time assistance can improve the user experience.
+Community Forums: Foster a sense of community and allow users to help each other.
+E-commerce Features: For online stores, features like a shopping cart and secure checkout are essential.
+Customer Testimonials: Showcase real experiences to build trust.
+Regular Backups: Protect against data loss.
+Content Management System (CMS): A CMS makes it easy to update content.
+Social Sharing: Users can easily share content on social media.
+404 Page Creativity: Even error pages can be engaging and helpful.
+Loading Speed Optimization: Compressed images and minimized code keep load times fast.
+Content Categories: Well-organized content helps users find what interests them.
+Breadcrumb Navigation: Shows users their path within the site.
+A/B Testing: Continuously improve the site's performance through testing different elements.
+Integrated Booking System: For service-based businesses, an integrated booking system simplifies appointments.
+Interactive Maps: Helpful for businesses with physical locations.
+Data Encryption: Protect user data with encryption protocols.
+Progressive Web App (PWA) Features: Offers app-like experiences on mobile devices.
+Readable Typography: Text should be legible and easy on the eyes.
+Custom 404 Page: A personalized error page can guide lost users back on track.
+Cross-Linking: Internal links help users discover related content.
+Content Sharing: Encourage users to share your content with social sharing buttons.
+Custom 403 Access Denied Page: Make restricted areas clear and offer guidance on how to gain access.
+Interactive Infographics: Visual representations of data can be engaging.
+Dynamic Content: Personalize content based on user preferences or behavior.
+Multimedia Galleries: Showcase images and videos in an organized manner.
+HTTPS Security: Secure data transmission is a must.
+Custom Error Messages: Friendly error messages help users understand and resolve issues.
+Newsletter Archive: Access to past newsletters can be valuable.
+Load Balancing: Ensure the site can handle traffic spikes.
+Privacy-Focused: Comply with privacy regulations and respect user preferences.
+Robust Hosting: Reliable hosting minimizes downtime.
+Resource Optimization: Compress and optimize all site assets.
+Content Readability: Use headings, subheadings, and bullet points to improve content readability.
+Custom 500 Server Error Page: When the server encounters an issue, provide guidance.
+Email Subscription Management: Allow users to easily manage their email subscriptions.
+Customizable Themes: For platforms like WordPress, customizable themes offer flexibility.
+Notification System: Inform users about updates, promotions, or events.
+Feedback Surveys: Gather insights from users to make improvements.
+Search Engine Submission: Ensure the site is indexed by search engines.
+Incorporate Social Proof: Display the number of social media followers or subscribers.
+Content Expiry Dates: Indicate when content expires or was last updated.
+Integration with Third-Party Services: Connect with tools like Google Analytics, MailChimp, or PayPal.
+Easily Accessible Terms of Service and Privacy Policy: Important legal documents should be readily available.
+Customizable Widgets: Allow users to personalize their experience.
+Localized Currency and Units: For international audiences, display relevant currency and units of measurement.
+Highlight Awards and Achievements: Showcase recognition and accomplishments.
+Gated Content: Offer premium content to registered users.
+Progressive Enhancement: Ensure basic functionality for all users, with advanced features for capable browsers.
+Customizable User Profiles: Users can tailor their profiles to their preferences.
+Gamification Elements: Incorporate game-like features to engage users.
+Content Sharing Permissions: Control who can share or access specific content.
+Cross-Browser Compatibility Testing: Ensure the site looks and functions well across different browsers.
+RSS Feeds: Provide syndication options for content updates.
+Dynamic Pricing: For e-commerce, show real-time price adjustments.
+Instant Messaging: Real-time chat for customer support.
+Visual Feedback: Highlight user interactions, such as button clicks.
+Interactive Forms: Make forms engaging and easy to complete.
+QR Code Integration: Link to the website through QR codes for offline promotions.
+Customizable Notifications: Let users choose the type and frequency of notifications.
+Print-Friendly Pages: Enable users to print content without formatting issues.
+Archived Webinars or Live Streams: Keep past events accessible for reference.
+User-Generated Content: Encourage users to contribute content, such as reviews or comments.
+Geolocation Features: Tailor content or services based on a user's location.
+Dynamic Recommendations: Suggest related content or products.
+Resource Library: A repository of downloadable resources.
+Customizable Dashboards: Allow users to personalize their dashboard view.
+Minimal Distractions: Avoid clutter and unnecessary distractions on the site.
+Product Customization Tools: For e-commerce, enable users to customize products.
+Scheduled Maintenance Notices: Inform users of planned downtime.
+Site Speed Monitoring: Continuously monitor and optimize site speed.
+In conclusion, a good website is a harmonious blend of design, functionality, user-friendliness, and security. It evolves with user needs, adheres to best practices, and ultimately serves its intended purpose effectively. </h3>
+</div>
+<div class="content-two">
+<h1>hello</h1>
+</div>
+
+<div class="content-three">
+<h3>A good website is a powerful tool in today's digital age. It serves as a virtual storefront, a source of information, and a platform for communication. What sets a good website apart from the rest are several key attributes.
+
+User-Friendly Design: A good website has a clean and intuitive design that ensures visitors can easily navigate and find what they're looking for.
+Mobile Responsiveness: It adapts seamlessly to various devices, including smartphones and tablets, ensuring a consistent user experience.
+Fast Loading Speed: Speed matters. A good website loads quickly to prevent users from bouncing due to slow load times.
+High-Quality Content: Content is king. It offers valuable information, is well-organized, and easy to read.
+Clear Branding: A strong visual identity and consistent branding across the site build trust and recognition.
+Effective Navigation: The site's menu and links are logically structured, making it easy for users to explore different sections.
+Security: A good website prioritizes user data security with SSL certificates and safe browsing.
+Contact Information: It provides clear and easily accessible contact details for inquiries or support.
+Engaging Visuals: High-quality images and multimedia elements enhance the overall user experience.
+Optimized for SEO: The website is optimized for search engines to improve visibility in search results.
+Clear Call to Action (CTA): Each page has a clear purpose and encourages users to take specific actions, such as signing up or making a purchase.
+Regular Updates: Content is kept fresh with regular updates, showing the site is active and relevant.
+Social Media Integration: Links to social profiles help users connect with the brand on various platforms.
+Loading Error Handling: It handles loading errors gracefully, displaying a friendly message when a page can't be found.
+Accessibility: A good website is accessible to all users, including those with disabilities, following WCAG guidelines.
+Compatibility: It functions well across different browsers and operating systems.
+Feedback Mechanism: Users can provide feedback or report issues easily.
+Search Functionality: A search bar helps users find specific content quickly.
+FAQ Section: Frequently asked questions can save users time and reduce support inquiries.
+Testimonials and Reviews: Positive feedback from satisfied customers builds trust.
+Privacy Policy: Transparency about data handling is crucial for user trust.
+Legal Compliance: The website adheres to relevant laws and regulations, such as GDPR or CCPA.
+Engaging Blog: A blog provides fresh, informative, and engaging content.
+Newsletter Signup: Allows users to subscribe for updates.
+Interactive Elements: Features like quizzes, polls, or calculators can enhance user engagement.
+Localization: If applicable, the site supports multiple languages or regions.
+Loading Progress Indicator: It informs users when a page is loading.
+Site Map: A clear sitemap aids navigation.
+Analytics Integration: Tools like Google Analytics help track site performance.
+FAQs and Help Center: Resources for troubleshooting and common questions are readily available.
+Video Content: Video can convey information more effectively than text alone.
+Live Chat Support: Real-time assistance can improve the user experience.
+Community Forums: Foster a sense of community and allow users to help each other.
+E-commerce Features: For online stores, features like a shopping cart and secure checkout are essential.
+Customer Testimonials: Showcase real experiences to build trust.
+Regular Backups: Protect against data loss.
+Content Management System (CMS): A CMS makes it easy to update content.
+Social Sharing: Users can easily share content on social media.
+404 Page Creativity: Even error pages can be engaging and helpful.
+Loading Speed Optimization: Compressed images and minimized code keep load times fast.
+Content Categories: Well-organized content helps users find what interests them.
+Breadcrumb Navigation: Shows users their path within the site.
+A/B Testing: Continuously improve the site's performance through testing different elements.
+Integrated Booking System: For service-based businesses, an integrated booking system simplifies appointments.
+Interactive Maps: Helpful for businesses with physical locations.
+Data Encryption: Protect user data with encryption protocols.
+Progressive Web App (PWA) Features: Offers app-like experiences on mobile devices.
+Readable Typography: Text should be legible and easy on the eyes.
+Custom 404 Page: A personalized error page can guide lost users back on track.
+Cross-Linking: Internal links help users discover related content.
+Content Sharing: Encourage users to share your content with social sharing buttons.
+Custom 403 Access Denied Page: Make restricted areas clear and offer guidance on how to gain access.
+Interactive Infographics: Visual representations of data can be engaging.
+Dynamic Content: Personalize content based on user preferences or behavior.
+Multimedia Galleries: Showcase images and videos in an organized manner.
+HTTPS Security: Secure data transmission is a must.
+Custom Error Messages: Friendly error messages help users understand and resolve issues.
+Newsletter Archive: Access to past newsletters can be valuable.
+Load Balancing: Ensure the site can handle traffic spikes.
+Privacy-Focused: Comply with privacy regulations and respect user preferences.
+Robust Hosting: Reliable hosting minimizes downtime.
+Resource Optimization: Compress and optimize all site assets.
+Content Readability: Use headings, subheadings, and bullet points to improve content readability.
+Custom 500 Server Error Page: When the server encounters an issue, provide guidance.
+Email Subscription Management: Allow users to easily manage their email subscriptions.
+Customizable Themes: For platforms like WordPress, customizable themes offer flexibility.
+Notification System: Inform users about updates, promotions, or events.
+Feedback Surveys: Gather insights from users to make improvements.
+Search Engine Submission: Ensure the site is indexed by search engines.
+Incorporate Social Proof: Display the number of social media followers or subscribers.
+Content Expiry Dates: Indicate when content expires or was last updated.
+Integration with Third-Party Services: Connect with tools like Google Analytics, MailChimp, or PayPal.
+Easily Accessible Terms of Service and Privacy Policy: Important legal documents should be readily available.
+Customizable Widgets: Allow users to personalize their experience.
+Localized Currency and Units: For international audiences, display relevant currency and units of measurement.
+Highlight Awards and Achievements: Showcase recognition and accomplishments.
+Gated Content: Offer premium content to registered users.
+Progressive Enhancement: Ensure basic functionality for all users, with advanced features for capable browsers.
+Customizable User Profiles: Users can tailor their profiles to their preferences.
+Gamification Elements: Incorporate game-like features to engage users.
+Content Sharing Permissions: Control who can share or access specific content.
+Cross-Browser Compatibility Testing: Ensure the site looks and functions well across different browsers.
+RSS Feeds: Provide syndication options for content updates.
+Dynamic Pricing: For e-commerce, show real-time price adjustments.
+Instant Messaging: Real-time chat for customer support.
+Visual Feedback: Highlight user interactions, such as button clicks.
+Interactive Forms: Make forms engaging and easy to complete.
+QR Code Integration: Link to the website through QR codes for offline promotions.
+Customizable Notifications: Let users choose the type and frequency of notifications.
+Print-Friendly Pages: Enable users to print content without formatting issues.
+Archived Webinars or Live Streams: Keep past events accessible for reference.
+User-Generated Content: Encourage users to contribute content, such as reviews or comments.
+Geolocation Features: Tailor content or services based on a user's location.
+Dynamic Recommendations: Suggest related content or products.
+Resource Library: A repository of downloadable resources.
+Customizable Dashboards: Allow users to personalize their dashboard view.
+Minimal Distractions: Avoid clutter and unnecessary distractions on the site.
+Product Customization Tools: For e-commerce, enable users to customize products.
+Scheduled Maintenance Notices: Inform users of planned downtime.
+Site Speed Monitoring: Continuously monitor and optimize site speed.
+In conclusion, a good website is a harmonious blend of design, functionality, user-friendliness, and security. It evolves with user needs, adheres to best practices, and ultimately serves its intended purpose effectively. </h3>
+</div>
+</body>
+<script>
+const div3 = document.querySelector('.content-four');
+const div2 = document.querySelector('.content');
+const div1 = document.querySelector('.sec-cont');
+const div0 = document.querySelector('.sec');
+        const windowHeight = window.innerHeight;
+
+        window.addEventListener('scroll', function() {
+const div3Top = div3.getBoundingClientRect().top;
+const div2Top = div2.getBoundingClientRect().top;
+const div1Top = div1.getBoundingClientRect().top;
+const div0Top = div0.getBoundingClientRect().top;
+
+            if (div3Top < windowHeight) {
+             setTimeout(() => {
+                    div3.style.opacity = 1;
+                }, 7000);
+            }
+ if (div2Top < windowHeight) {
+             setTimeout(() => {
+                    div2.style.opacity = 1;
+                }, 1000);
+            }
+ if (div1Top < windowHeight) {
+             setTimeout(() => {
+                    div1.style.opacity = 0;
+                }, 700);
+            }
+if (div0Top < windowHeight) {
+             setTimeout(() => {
+                    div0.style.opacity = 0;
+                }, 700);
+            }
+         
+        });
+    </script>
+</html>
